@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+ 
+  "name": "Remove Twitter View Count",
+  "version": "0.1.0",
+  "description": "Removes the stupid Twitter view count that Musk added.",
+ 
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "removeviewcount@twitter.com"
+    }
+  }, 
+  
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },  
+
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["*://*.twitter.com/*"]
+  }]
+ 
+}
