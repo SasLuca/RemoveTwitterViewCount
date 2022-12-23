@@ -11,7 +11,7 @@ Report any issues or incompatibilities in the issues section.
 
 The plugin is currently under review to be added to the Chrome Webstore, for now however you must manually add it which is not too hard!
 
-1. Download the latest [release](https://github.com/SasLuca/RemoveTwitterViewCount/releases/tag/v0.1.0)
+1. Download the latest [release](https://github.com/SasLuca/RemoveTwitterViewCount/releases/tag/v0.2.0)
 2. Unzip the folder.
 3. Goto `chrome://extensions` by typing `chrome://extensions` in your search bar and clicking enter.
 4. Tick the "developer mode" option in the top right corner.
