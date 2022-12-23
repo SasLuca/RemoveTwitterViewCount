@@ -2,7 +2,7 @@
   "manifest_version": 3,
  
   "name": "Remove Twitter View Count",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Removes the stupid Twitter view counters added by Musk.",
   "default_locale": "en",
   "author": "sas.luca.al@gmail.com",
