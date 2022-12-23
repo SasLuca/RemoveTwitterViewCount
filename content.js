@@ -1,42 +1,8 @@
-function removeElementsByXPath(xpath)
+const style = `<style>
+div[id^='id__'].css-1dbjc4n.r-1ta3fxp.r-18u37iz.r-1wtj0ep.r-1s2bzr4.r-1mdbhws > div:first-child, .css-1dbjc4n.r-2sztyj.r-1efd50x.r-5kkj8d.r-13awgt0.r-18u37iz.r-tzz3ar.r-s1qlax.r-1yzf0co > div:first-child
 {
-    let results = [];
-    let query = document.evaluate(xpath, document, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-    for (let i = 0, length = query.snapshotLength; i < length; ++i) 
-    {
-        results.push(query.snapshotItem(i));
-    }
-    results.forEach(it => it.parentNode.removeChild(it))
+    display: none !important;
 }
+</style>`;
 
-// Setup the observer
-var observer = new MutationObserver(function (mutations) 
-{
-    // Remove view counters on tweets in timeline
-    {
-        var elementsToRemove = []
-        var elements = document.getElementsByClassName("css-4rbku5 css-18t94o4 css-1dbjc4n r-1loqt21 r-1777fci r-bt1l66 r-1ny4l3l r-bztko3 r-lrvibr")
-        for (var i = 0, len = elements.length; i < len; i++) elementsToRemove.push(elements[i])
-        
-        // Must go up one node and remove that
-        elementsToRemove.forEach(it => it.parentNode.parentNode.removeChild(it.parentNode))
-    }
-
-    // Remove view counters on tweet page
-    {
-        const viewCounterOnTweetPage = "//a[contains(@href, 'analytics')]"
-        removeElementsByXPath(viewCounterOnTweetPage)
-    }
-
-    // Remove "View tweet analytics" on your tweet page
-    {
-        removeElementsByXPath("/html/body/div[1]/div/div/div[2]/main/div/div/div/div[1]/div/section/div/div/div[4]/div/div/div[1]/article/div/div/div/div[3]/div[7]")
-    }
-})
-
-observer.observe(document.body, { 
-    attributes: true,
-    childList: true,
-    subtree: true,
-    characterData: true
-})
+document.head.insertAdjacentHTML('beforeend', style);
