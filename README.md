@@ -5,9 +5,8 @@
 A simple plugin that removes the Twitter view counters added by Musk recently.
 No longer will you be ratioed by your views!
 
-The plugin observes any changes to the DOM and uses css selectors and xpath queries combined with heuristics from inspecting twitter's code to remove the div elements of the view counters from the page.
-
-Report any issues or incompatibilities in the issues section.
+# Download from Firefox Add-Ons
+You can find the plugin on the Firefox Add-Ons store here: https://addons.mozilla.org/en-US/firefox/addon/remove-twitter-view-count
 
 # Manually add to Chrome
 
