@@ -5,6 +5,9 @@
 A simple plugin that removes the Twitter view counters added by Musk recently.
 No longer will you be ratioed by your views!
 
+# Download from Chrome Web Store
+You can find the plugin on the Chrome Web Store here: https://chrome.google.com/webstore/detail/remove-twitter-view-count/ijbjjdhikjceigkkglenmlffblcilbpn
+
 # Download from Firefox Add-Ons
 You can find the plugin on the Firefox Add-Ons store here: https://addons.mozilla.org/en-US/firefox/addon/remove-twitter-view-count
 
